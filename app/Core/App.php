@@ -5,7 +5,7 @@ namespace App\Core;
 class App
 {
 	protected $controller = 'home';
-	protected $method = 'index';
+	protected $method = 'users';
 	protected $params = [];
 
 	public function __construct()
