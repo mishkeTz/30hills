@@ -1,4 +1,4 @@
 <?php  
 
-header("Location: home/index");
+header("Location: home/users");
 
