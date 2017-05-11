@@ -17,7 +17,7 @@ class Validation
 	{
 		$userId = (int) $userId;
 
-		if (is_int($userId)) 
+		if (is_int($userId) && filter_var($userId, FILTER_VALIDATE_INT, ['options' => ['min_range' => 1 ]])) 
 		{
 			$user = $this->db->prepare("
 				SELECT 
